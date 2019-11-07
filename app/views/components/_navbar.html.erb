@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to cocktails_path, class: "navbar-brand" do %>
+  <p><i class="fas fa-cocktail"></i>All cocktails</p>
+  <% end %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0">
+      <%= link_to new_cocktail_path, class: "navbar-brand" do %>
+      <button class="btn btn-outline-success my-2 my-sm-0" >Add new cocktail</button>
+  <% end %>
+    </form>
+  </div>
+</nav>
